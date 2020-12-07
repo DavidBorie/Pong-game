@@ -1,0 +1,46 @@
+<html lang="fr">
+    <head>
+        <title>PONG</title>
+        <!--Importation du CSS et du jQueries -->
+        <link rel="stylesheet" href="css/pong.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <!-- affichage de l'ecran titre -->
+        <div id="titre">
+            <p>Joueur 1</p>
+            <p> Jouer avec l'aide des touches</p>
+            <div>
+                <div id="A">A</div> et <div id="Q">Q</div>
+            </div>
+            <p>Joueur 2</p>
+            <p> Jouer avec l'aide des touches</p>
+            <div>
+                <div id="P">P</div> et <div id="M">M</div>
+            </div>
+            <a href="#" class="btn">Lancer la partie</a>
+        </div>
+
+        <!-- affichage du terrain -->
+        <div id="terrain">
+            <!-- affichage des score -->
+            <div id="Sdroite" class="score">0</div>
+            <div id="Sgauche" class="score">0</div>
+          <!-- affichage de la balle -->
+            <div id="balle">
+            </div>
+            <!-- Affichage des deux raquettes-->
+            <div id="droite" class="raquette">
+            </div>
+            <div id="gauche" class="raquette">
+            </div>
+        </div>
+    </body>
+    <!-- lancement du script JS--> 
+    <script src="js/Terrain.js"></script>
+    <script src="js/Raquette.js"></script>
+    <script src="js/Balle.js"></script>
+    <script src="js/Joueur.js"></script>
+    <script src="js/pong.js"></script>
+</html>
